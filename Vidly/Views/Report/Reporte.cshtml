@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Reporte";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Report</h2>
+
+<form action="/action_page.cshtml" method="post">
+
+    <input id="Button1" type="button" value="Generar PDF" />
+</form>
+<!-- REPORTE METODO -- REPORT CLASE --> 
+@Html.ActionLink("GenerarPDF", "DescargaPDF", "Report")
+
+
